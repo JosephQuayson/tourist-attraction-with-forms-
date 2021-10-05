@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<head>
+    {% load static %} {% block head %}
+    <link rel="stylesheet" href="{% static 'tourist_attraction/style.css' %}"> {% endblock %}
+
+</head>
+
+<body>
+    <a href="{% url 'home' %}">Go Home</a> {% block content %} {% endblock %}
+
+</body>
